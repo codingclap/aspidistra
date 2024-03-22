@@ -1,12 +1,15 @@
  :root {
     --txt-color1: #BD8928;
+    --txt-color2: #DFDFDF;
+    --txt-color-transparent: #000000a3;
  }
 
 
  @font-face {
-   font-family: 'proxima-nova-thin';
-   src: url('../fonts/proxima-nova-thin.otf');
-}
+    font-family: 'proxima-nova-thin';
+    src: url('../fonts/proxima-nova-thin.otf');
+ }
+
  @font-face {
     font-family: 'proxima-nova-light';
     src: url('../fonts/proxima-nova-light.otf');
@@ -27,12 +30,18 @@
     src: url('../fonts/proxima-nova-bold.otf');
  }
 
+ @font-face {
+   font-family: 'opensans-regular';
+   src: url('../fonts/OpenSans-Regular.ttf');
+}
+
  [data-font='proxima-thin'] {
-   font-family: 'proxima-nova-thin';
-}
+    font-family: 'proxima-nova-thin';
+ }
+
  [data-font='proxima-light'] {
-   font-family: 'proxima-nova-light';
-}
+    font-family: 'proxima-nova-light';
+ }
 
  [data-font='proxima-regular'] {
     font-family: 'proxima-nova-regular';
@@ -46,7 +55,24 @@
     font-family: 'proxima-nova-bold';
  }
 
+ [data-font='opensans-regular'] {
+    font-family: 'opensans-regular';
+ }
 
  [data-txt-color='green'] {
     color: var(--txt-color1);
  }
+
+ [data-txt-color='light'] {
+    color: var(--txt-color2);
+ }
+ 
+ [data-txt-color="pink"]{
+   color: #C7656E;
+ }
+
+ [data-txt-color='black-opacity'] {
+    background-color: var(--txt-color-transparent);
+ }
+
+ 
