@@ -1,0 +1,65 @@
+/*
+############################
+##   Toggle Button       ##    
+############################
+*/
+.switch-controll .toggle {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    background-color: #575757;
+    border-radius: 30px;
+    border: 0px solid gray;
+    cursor: pointer;
+}
+
+
+.switch-controll .toggle:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 5px;
+    left: 8px;
+    transition: all 0.5s;
+}
+
+.switch-controll p {
+    margin: 0px;
+    padding: 0px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.switch-controll .checkbox:checked+.toggle::after {
+    left: 63px;
+    cursor: pointer;
+}
+
+.switch-controll .checkbox:checked+.toggle {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.switch-controll .checkbox {
+    display: none;
+}
+
+/*
+############################
+##   Toggle Button       ##    
+############################
+*/
+
+
+
+
+section {
+    padding: 3em 0em;
+}

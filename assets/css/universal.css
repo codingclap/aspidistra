@@ -1,0 +1,52 @@
+ :root {
+    --txt-color1: #BD8928;
+ }
+
+
+ @font-face {
+   font-family: 'proxima-nova-thin';
+   src: url('../fonts/proxima-nova-thin.otf');
+}
+ @font-face {
+    font-family: 'proxima-nova-light';
+    src: url('../fonts/proxima-nova-light.otf');
+ }
+
+ @font-face {
+    font-family: 'proxima-nova-regular';
+    src: url('../fonts/proxima-nova-regular.otf');
+ }
+
+ @font-face {
+    font-family: 'proxima-nova-semibold';
+    src: url('../fonts/proxima-nova-semibold.otf');
+ }
+
+ @font-face {
+    font-family: 'proxima-nova-bold';
+    src: url('../fonts/proxima-nova-bold.otf');
+ }
+
+ [data-font='proxima-thin'] {
+   font-family: 'proxima-nova-thin';
+}
+ [data-font='proxima-light'] {
+   font-family: 'proxima-nova-light';
+}
+
+ [data-font='proxima-regular'] {
+    font-family: 'proxima-nova-regular';
+ }
+
+ [data-font='proxima-semibold'] {
+    font-family: 'proxima-nova-semibold';
+ }
+
+ [data-font='proxima-bold'] {
+    font-family: 'proxima-nova-bold';
+ }
+
+
+ [data-txt-color='green'] {
+    color: var(--txt-color1);
+ }

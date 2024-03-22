@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspidistra</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspidistra</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/universal.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-        
+
+  <!--
+############################
+##    Navbar              ##    
+############################
+-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/aspidistra.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ps-md-5 ms-md-5 gap-md-4 py-2 justify-content-between" id="navbarNav">
+        <ul class="navbar-nav gap-md-5 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Values</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <div class="switch-controll text-center pt-4 pt-md-0 pb-4 pb-md-0">
+          <input type="checkbox" id="switch" class="checkbox" />
+
+          <label for="switch" class="toggle">
+            <p>
+              Dark &nbsp;&nbsp; Light
+            </p>
+          </label>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--
+############################
+##    Navbar              ##    
+############################
+-->
+
+
+  <!--
+############################
+##    Home Banner         ##    
+############################
+-->
+
+  <section id="home-banner">
+    <div class="container py-5">
+      <div class="row justify-content-between align-items-center gap-5">
+        <div class="col-6">
+          <img src="assets/img/bubble-gum-girl.png" alt="" class="w-100">
+        </div>
+        <div class="col-5">
+          <h1 class="display-2 fw-bold" data-font='proxima-bold' data-txt-color='green'>Keep your brand flying</h1>
+          <p class="fs-5 text py-3 lh-medium" data-font='proxima-thin'>Looking for marketing, storytelling, branding, societal impact, AI or social media strategy? Aspidistra is
+            a journalism-powered creative and strategic agency that seamlessly integrates this all.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+############################
+##    Home Banner         ##    
+############################
+-->
+
+
 </body>
+
 </html>
