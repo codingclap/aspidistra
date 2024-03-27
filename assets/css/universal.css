@@ -81,13 +81,21 @@
     font-size: 1.13em;
  }
 
- .display-7 {
-    font-size: 2.2em;
+ .display-7 { 
+   font-size: calc(1.2rem + 2vw);
  }
- .display-8 {
-   font-size: 2em;
+ .display-8 { 
+   font-size: calc(1.2rem + 2vw);
 }
 
+@media (min-width: 1200px){
+   .display-7 {
+      font-size: 2.2em; 
+   }
+   .display-8 {
+     font-size: 2em; 
+  }
+}
  .b-before-after {
     position: relative;
     width: 100%;
