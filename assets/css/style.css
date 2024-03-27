@@ -146,7 +146,7 @@ section {
     position: absolute;
     width: 46%;
     height: 17px;
-    top: 1px;
+    top: 2px;
     left: 100px;
     background-size: contain;
     background-image: url(../img/right-arrow.png);
@@ -185,5 +185,11 @@ section {
  @media(max-width:768px){
     .ourValues img{
         max-width: 90px;
+    }
+
+    .ourServices .read-more::after{ 
+        top: 2px;
+        left: 140px;
+        
     }
  }
