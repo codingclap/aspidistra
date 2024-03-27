@@ -149,3 +149,18 @@ section {
  .contactUs .gray-box .gray-box-text img{
     max-width: 200px;
  } 
+
+
+
+
+
+
+
+
+
+
+ @media(max-width:768px){
+    .ourValues img{
+        max-width: 90px;
+    }
+ }
