@@ -31,9 +31,9 @@
  }
 
  @font-face {
-   font-family: 'opensans-regular';
-   src: url('../fonts/OpenSans-Regular.ttf');
-}
+    font-family: 'opensans-regular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+ }
 
  [data-font='proxima-thin'] {
     font-family: 'proxima-nova-thin';
@@ -66,13 +66,78 @@
  [data-txt-color='light'] {
     color: var(--txt-color2);
  }
- 
- [data-txt-color="pink"]{
-   color: #C7656E;
+
+ [data-txt-color="pink"] {
+    color: #C7656E;
  }
 
  [data-txt-color='black-opacity'] {
     background-color: var(--txt-color-transparent);
  }
 
- 
+
+
+ .fs-7 {
+    font-size: 1.13em;
+ }
+
+ .display-7 {
+    font-size: 2.2em;
+ }
+ .display-8 {
+   font-size: 2em;
+}
+
+ .b-before-after {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+ }
+
+ .b-before-after::after {
+    content: " ";
+    position: absolute;
+    width: 20%;
+    height: 1px;
+    top: 50%;
+    right: 0;
+    background: white;
+    padding-right: 10px;
+ }
+
+ .b-before-after::before {
+    content: " ";
+    position: absolute;
+    width: 20%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    background: white;
+ }
+
+ .b-before-after-dark {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+ }
+
+ .b-before-after-dark::after {
+    content: " ";
+    position: absolute;
+    width: 20%;
+    height: 1px;
+    top: 50%;
+    right: 0;
+    background: rgb(0, 0, 0);
+    padding-right: 10px;
+ }
+
+ .b-before-after-dark::before {
+    content: " ";
+    position: absolute;
+    width: 20%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    background: rgb(0, 0, 0);
+ }
