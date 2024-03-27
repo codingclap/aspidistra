@@ -142,9 +142,13 @@
     background: rgb(0, 0, 0);
  }
 
-
+ @media(max-width:590px){
+   .b-before-after { 
+      max-width: 380px;
+  }
+ }
  @media(max-width:425px){
    .b-before-after { 
-      max-width: 315px;
+      max-width: 320px;
   }
  }
