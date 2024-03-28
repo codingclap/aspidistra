@@ -60,3 +60,35 @@ mainSwitch.addEventListener('click', function (e) {
 
 
 });
+/********** Dark and Light - Setup  ********/
+
+
+
+
+
+/********** Mobile Navbars  ********/
+
+let navButton = document.querySelector('.dropdown-navbar');
+    let firstBar = document.querySelector('.navbar-toggler-icon-1:nth-of-type(1)');
+    let middleBar = document.querySelector('.navbar-toggler-icon-1:nth-of-type(2)');
+    let lastBar = document.querySelector('.navbar-toggler-icon-1:nth-of-type(3)');
+    navButton.addEventListener('click', () => {
+      if (navButton.classList.contains('inactive')) {
+        firstBar.style = "transform:rotate(145deg)";
+        middleBar.style = "display:none;";
+        lastBar.style = "transform:rotate(220deg);margin-top:-2px";
+
+        navButton.classList.remove('inactive');
+      } else {
+        navButton.classList.add('inactive');
+        firstBar.style = "transform:rotate(0deg)";
+        middleBar.style = "display:block;";
+        lastBar.style = "transform:rotate(0deg);margin-top:6px";
+      }
+
+
+      //console.log(middleBar);
+
+    })
+
+/********** Mobile Navbars  ********/

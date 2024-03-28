@@ -172,6 +172,16 @@ section {
     background-image: url(../img/right-arrow.png);
     background-repeat: no-repeat;
 }
+
+.serviceDetails{
+    background-color: #423C3E;
+    border-radius: 20px;
+}
+.details-box{
+    background-color: #423C3E;
+    height: 100px;
+    border-radius: 20px;
+}
  /*
 ############################
 ##   Our Services       ##    
