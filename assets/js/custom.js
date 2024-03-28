@@ -92,3 +92,39 @@ let navButton = document.querySelector('.dropdown-navbar');
     })
 
 /********** Mobile Navbars  ********/
+
+
+
+
+
+/**************** Services Hide and Show **************/
+
+let serviceReadBtn = document.querySelectorAll('a.read-more');
+let items_id = [];
+for (let i = 0; i < serviceReadBtn.length; i++) {
+
+  let box_className = serviceReadBtn[i].classList[2];
+  items_id.push(box_className);
+
+  serviceReadBtn[i].addEventListener('click', () => {
+    let details_page;
+
+    if (serviceReadBtn[i].classList.contains(box_className)) {
+
+      document.querySelector('.details-' + box_className).classList.remove('d-none');     // Removed unused Section
+
+      const filteredNames = items_id.filter((items_ids) => items_ids !== box_className);   // Matched the Selected Content box class name from the Array
+
+      for (let j = 0; j < filteredNames.length; j++) {
+        console.log(filteredNames[j]);
+        document.querySelector('.details-' + filteredNames[j]).classList.add('d-none');        // Add class on those Content box are unused
+      }
+
+    }
+  })
+
+}
+console.log(items_id);         // Display All Content Boxs Class Name
+
+
+/**************** Services Hide and Show **************/
