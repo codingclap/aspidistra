@@ -1,27 +1,44 @@
-:root{
+:root {
     --bs-navbar-toggler-icon-bg:
 }
 
-html,body{
+html,
+body {
     box-sizing: border-box;
     font-family: 'proxima-nova-light';
- }
- 
- span.navbar-toggler-icon-1{ 
+}
+
+span.navbar-toggler-icon-1 {
     display: flex;
     background-color: #fff;
     height: 2px;
-    width:30px;
-    transition: 0.5s ease-in-out;
- }
- span.navbar-toggler-icon-1:nth-of-type(2){ 
-     margin-top:6px;
-     transition: 0.5s ease-in-out;
- }
- span.navbar-toggler-icon-1:nth-of-type(3){ 
-    margin-top:6px;
+    width: 30px;
     transition: 0.5s ease-in-out;
 }
+
+span.navbar-toggler-icon-1:nth-of-type(2) {
+    margin-top: 6px;
+    transition: 0.5s ease-in-out;
+}
+
+span.navbar-toggler-icon-1:nth-of-type(3) {
+    margin-top: 6px;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-item.active {
+    position: relative;
+}
+
+.nav-item.active:after {
+    position: absolute;
+    content: " ";
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
 /*
 ############################
 ##   Toggle Button       ##    
@@ -42,7 +59,7 @@ html,body{
 .switch-controll .toggle:after {
     content: '';
     position: absolute;
-    width: 43px;
+    width: 41px;
     height: 40px;
     border-radius: 50%;
     background-color: #fff;
@@ -68,7 +85,7 @@ html,body{
 }
 
 .switch-controll .checkbox:checked+.toggle {
-    background-color: rgb(0, 0, 0);
+    background-color: #434343;
     cursor: pointer;
 }
 
@@ -97,12 +114,13 @@ section {
 ##   Home banner      ##    
 ############################
 */
-.home-banner{
-   background-image: url('../img/bg-1.jpg'); 
-   background-size: cover;
-   background-repeat: no-repeat;
-
+.home-banner {
+    background-image: url('../img/bg-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
+
 /*
 ############################
 ##    Home banner        ##    
@@ -116,13 +134,14 @@ section {
 ##    Our Story       ##    
 ############################
 */
-.ourStory-banner{
-    background-image: url('../img/our-story-bg.png'); 
+.ourStory-banner {
+    background-image: url('../img/our-story-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
- 
- }
- /*
+
+}
+
+/*
 ############################
 ##   Our Story      ##    
 ############################
@@ -135,34 +154,29 @@ section {
 ############################
 */
 
-.ourValues-banner{
-    background-image: url('../img/our-values.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
- 
- }
- .ourValues img{
-    max-width: 120px;
- }
+.ourValues .custom-border{
+    min-height: 275px;
+    border: 2px solid #BD8928;
+    border-radius: 25px 0px 25px 0px;
+}
 
-
- /*
+/*
 ############################
 ##   Our Values       ##    
 ############################
 */
 
- /*
+/*
 ############################
 ##   Our Services       ##    
 ############################
 */
-.ourServices .read-more{
+.ourServices .read-more {
     position: relative;
 }
 
-.ourServices .read-more::after{
-    content:' ';
+.ourServices .read-more::after {
+    content: ' ';
     position: absolute;
     width: 46%;
     height: 17px;
@@ -173,35 +187,52 @@ section {
     background-repeat: no-repeat;
 }
 
-.serviceDetails{
+.serviceDetails {
     background-color: #423C3E;
     border-radius: 20px;
 }
-.details-box{
+
+.details-box {
     background-color: #423C3E;
     height: 100px;
     border-radius: 20px;
 }
- /*
+
+/*
 ############################
 ##   Our Services       ##    
 ############################
 */
 
- /*
+/*
 ############################
 ##  Contact Us      ##    
 ############################
 */
 .contactUs .gray-box {
-     width:100%;
-     min-height: 400px;
-     background-color:#423C3E;
+    width: 100%;
+    min-height: 400px; 
     border-radius: 25px;
- }
- .contactUs .gray-box .gray-box-text img{
+}
+
+.contactUs .gray-box .gray-box-text img {
     max-width: 200px;
- } 
+}
+
+.contactUs .socialMedia{
+    display:flex; 
+    flex-direction: column;
+}
+
+.contactUs .socialMedia .box-1{
+    display: flex;
+    align-items: center;
+}
+
+.contactUs .socialMedia .box-1 img{
+    width: 100%;
+    max-width: 45px;
+}
 
 
 
@@ -211,15 +242,14 @@ section {
 
 
 
-
- @media(max-width:768px){
-    .ourValues img{
+@media(max-width:768px) {
+    .ourValues img {
         max-width: 90px;
     }
 
-    .ourServices .read-more::after{ 
+    .ourServices .read-more::after {
         top: 2px;
         left: 140px;
-        
+
     }
- }
+}

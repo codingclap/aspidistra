@@ -100,11 +100,11 @@ let navButton = document.querySelector('.dropdown-navbar');
 /**************** Services Hide and Show **************/
 
 let serviceReadBtn = document.querySelectorAll('a.read-more');
-let items_id = [];
+let items_id = [];                                                                      
 for (let i = 0; i < serviceReadBtn.length; i++) {
 
   let box_className = serviceReadBtn[i].classList[2];
-  items_id.push(box_className);
+  items_id.push(box_className);                                            // Push all the elements to the array
 
   serviceReadBtn[i].addEventListener('click', () => {
     let details_page;
