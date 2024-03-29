@@ -247,6 +247,11 @@ section {
 
 
 
+@media(max-width:991px){
+    .ourServices .service-icon { 
+        max-width: 97px;
+    }
+}
 
 
 @media(max-width:768px) {
