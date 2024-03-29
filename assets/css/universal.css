@@ -87,6 +87,9 @@
  [data-txt-color='black-opacity'] {
     background-color: var(--txt-color-transparent);
  }
+ [data-txt-color='black'] {
+   background-color: #000000;
+}
 
 
  [data-font-size="18"] {

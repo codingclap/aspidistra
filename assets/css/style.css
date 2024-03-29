@@ -62,7 +62,7 @@ span.navbar-toggler-icon-1:nth-of-type(3) {
     width: 41px;
     height: 40px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #938F8F;
     top: 5px;
     left: 8px;
     transition: all 0.5s;
@@ -76,7 +76,7 @@ span.navbar-toggler-icon-1:nth-of-type(3) {
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .switch-controll .checkbox:checked+.toggle::after {
@@ -85,7 +85,7 @@ span.navbar-toggler-icon-1:nth-of-type(3) {
 }
 
 .switch-controll .checkbox:checked+.toggle {
-    background-color: #434343;
+    background-color: #575757;
     cursor: pointer;
 }
 

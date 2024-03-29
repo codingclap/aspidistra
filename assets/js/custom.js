@@ -5,7 +5,7 @@ let heading_border_after = document.querySelectorAll('.border-switch');
 let homeBanner = document.querySelector('.home-banner');
 let ourStoryBanner = document.querySelector('.ourStory-banner');
 let ourValuesBanner = document.querySelector('.ourValues-banner');
-
+let navbarPanel = document.querySelector('.navbar');
 
 mainSwitch.addEventListener('click', function (e) {
     if (mainSwitch.value === 'light') {
@@ -18,9 +18,11 @@ mainSwitch.addEventListener('click', function (e) {
         for (let j = 0; j < paraColor.length; j++) {
             paraColor[j].setAttribute('data-txt-color', '#000');
         }
+        
         //headingColor.setAttribute('data-txt-color','#000');
         //paraColor.setAttribute('data-txt-color','#000');
         homeBanner.style.backgroundImage = "url()";
+        navbarPanel.setAttribute('data-txt-color','black');
         //ourStoryBanner.style.backgroundImage = "url()";
         //ourValuesBanner.style.backgroundImage = "url()";
 
@@ -44,6 +46,7 @@ mainSwitch.addEventListener('click', function (e) {
             paraColor[j].setAttribute('data-txt-color', 'light');
         }
 
+        navbarPanel.setAttribute('data-txt-color','black-opacity');
         homeBanner.style.backgroundImage = "url(assets/img/bg-1.jpg)";
        // ourStoryBanner.style.backgroundImage = "url(assets/img/our-story-bg.png)";
        // ourValuesBanner.style.backgroundImage = "url(assets/img/our-story-bg.png)";
