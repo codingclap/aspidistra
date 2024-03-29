@@ -70,7 +70,9 @@
  [data-txt-color="pink"] {
     color: #C7656E;
  }
-
+ [data-txt-color="gray"] {
+   color: #ADADAD;
+}
  [data-txt-color='black-opacity'] {
     background-color: var(--txt-color-transparent);
  }

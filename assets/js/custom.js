@@ -21,8 +21,8 @@ mainSwitch.addEventListener('click', function (e) {
         //headingColor.setAttribute('data-txt-color','#000');
         //paraColor.setAttribute('data-txt-color','#000');
         homeBanner.style.backgroundImage = "url()";
-        ourStoryBanner.style.backgroundImage = "url()";
-        ourValuesBanner.style.backgroundImage = "url()";
+        //ourStoryBanner.style.backgroundImage = "url()";
+        //ourValuesBanner.style.backgroundImage = "url()";
 
         for (let k = 0; k < heading_border_after.length; k++) {
             if (heading_border_after[k].classList.contains("b-before-after")) {
@@ -45,8 +45,8 @@ mainSwitch.addEventListener('click', function (e) {
         }
 
         homeBanner.style.backgroundImage = "url(assets/img/bg-1.jpg)";
-        ourStoryBanner.style.backgroundImage = "url(assets/img/our-story-bg.png)";
-        ourValuesBanner.style.backgroundImage = "url(assets/img/our-story-bg.png)";
+       // ourStoryBanner.style.backgroundImage = "url(assets/img/our-story-bg.png)";
+       // ourValuesBanner.style.backgroundImage = "url(assets/img/our-story-bg.png)";
 
         for (let k = 0; k < heading_border_after.length; k++) {
             if (heading_border_after[k].classList.contains("b-before-after-dark")) {
