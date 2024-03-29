@@ -1,14 +1,33 @@
+'use strict'
+
 let mainSwitch = document.querySelector('#switch');
 let headingColor = document.querySelectorAll('.heading-dark');
 let paraColor = document.querySelectorAll('.para-dark');
 let paraOneColor = document.querySelectorAll('.para1-dark');
 let heading_border_after = document.querySelectorAll('.border-switch');
 let homeBanner = document.querySelector('.home-banner');
-let ourStoryBanner = document.querySelector('.ourStory-banner');
-let ourValuesBanner = document.querySelector('.ourValues-banner');
 let navbarPanel = document.querySelector('.navbar');
 let ourStory = document.querySelector('.ourStory');
 let footerImg = document.querySelector('.footer-img');
+let tabsLink = document.querySelectorAll('button.nav-link');
+let finalTabs=[];
+for (let ss = 0; ss < tabsLink.length; ss++) {
+  tabsLink[ss].addEventListener('click', function (e) {
+    let arr = ['Strategy', 'Impact', 'Content', 'Learning & Development'];
+    if (tabsLink[ss].classList.contains('light-mode')) {
+      if (tabsLink[ss].attributes['aria-selected'].nodeValue == true) {
+       finalTabs = arr.filter((arrs) => arrs !== tabsLink[ss].innerHTML);
+        //console.log(finalTabs);
+      }
+    }
+  
+  });
+
+  
+  
+}
+
+
 
 mainSwitch.addEventListener('click', function (e) {
   if (mainSwitch.value === 'light') {
@@ -28,17 +47,30 @@ mainSwitch.addEventListener('click', function (e) {
     homeBanner.style.backgroundImage = "url()";
     navbarPanel.setAttribute('data-bg-color', 'black');
     footerImg.src = "assets/img/aspidistra-big-dark.png";
+    document.getElementById('nav-tabContent').style.border = "2px solid #545454";
     //ourStoryBanner.style.backgroundImage = "url()";
     //ourValuesBanner.style.backgroundImage = "url()";
 
-    for (let k = 0; k < heading_border_after.length; k++) {
-      if (heading_border_after[k].classList.contains("b-before-after")) {
-        heading_border_after[k].classList.remove("b-before-after-dark");
-        heading_border_after[k].classList.add("b-before-after-dark");
+    for (let l = 0; l < heading_border_after.length; l++) {
+      if (heading_border_after[l].classList.contains("b-before-after")) {
+        heading_border_after[l].classList.remove("b-before-after-dark");
+        heading_border_after[l].classList.add("b-before-after-dark");
       }
     }
 
-    //console.log('light');
+    for (let m = 0; m < tabsLink.length; m++) {
+      if (tabsLink[m].attributes['aria-selected'].nodeValue == "true") {
+        tabsLink[m].classList.add("light-mode");
+      } else {
+        tabsLink[m].style.backgroundColor = "#fff";
+        tabsLink[m].style.color = "#000";
+        tabsLink[m].classList.add("light-mode");
+      }
+      // console.log(tabsLink[m].attributes['aria-selected'].nodeValue);
+    }
+
+
+    // console.log(customBorder);
 
   } else if (mainSwitch.value === 'dark') {
     mainSwitch.value = 'light';
@@ -57,16 +89,27 @@ mainSwitch.addEventListener('click', function (e) {
     navbarPanel.setAttribute('data-bg-color', 'black-opacity');
     homeBanner.style.backgroundImage = "url(assets/img/bg-1.jpg)";
     footerImg.src = "assets/img/aspidistra-big.png";
+    document.getElementById('nav-tabContent').style.border = "2px solid #fff";
     // ourStoryBanner.style.backgroundImage = "url(assets/img/our-story-bg.png)";
     // ourValuesBanner.style.backgroundImage = "url(assets/img/our-story-bg.png)";
 
-    for (let k = 0; k < heading_border_after.length; k++) {
-      if (heading_border_after[k].classList.contains("b-before-after-dark")) {
-        heading_border_after[k].classList.remove("b-before-after-dark");
-        heading_border_after[k].classList.add("b-before-after");
+    for (let l = 0; l < heading_border_after.length; l++) {
+      if (heading_border_after[l].classList.contains("b-before-after-dark")) {
+        heading_border_after[l].classList.remove("b-before-after-dark");
+        heading_border_after[l].classList.add("b-before-after");
       }
     }
 
+    for (let m = 0; m < tabsLink.length; m++) {
+      if (tabsLink[m].attributes['aria-selected'].nodeValue == "true") {
+        tabsLink[m].classList.add("dark-mode");
+      } else {
+        tabsLink[m].style.backgroundColor = "";
+        tabsLink[m].style.color = "";
+        tabsLink[m].classList.add("dark-mode");
+      }
+      // console.log(tabsLink[m].attributes['aria-selected'].nodeValue);
+    }
     //console.log('dark');
   }
 

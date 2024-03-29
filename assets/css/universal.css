@@ -97,7 +97,12 @@
 [data-bg-color='gray-light'] {
    background-color: #F0F0F0;
 }
-
+[data-txt-border="border-light"]{
+   border:2px solid #fff;
+}
+[data-txt-border="border-dark"]{
+   border:2px solid #545454;
+}
 
  [data-font-size="18"] {
     font-size: 18px;
