@@ -36,9 +36,9 @@
  }
 
  @font-face {
-   font-family: 'opensans-bold';
-   src: url('../fonts/OpenSans-Bold.ttf');
-}
+    font-family: 'opensans-bold';
+    src: url('../fonts/OpenSans-Bold.ttf');
+ }
 
  [data-font='proxima-thin'] {
     font-family: 'proxima-nova-thin';
@@ -65,8 +65,8 @@
  }
 
  [data-font='opensans-bold'] {
-   font-family: 'opensans-bold';
-}
+    font-family: 'opensans-bold';
+ }
 
  [data-txt-color='green'] {
     color: var(--txt-color1);
@@ -79,34 +79,42 @@
  [data-txt-color="pink"] {
     color: #C7656E;
  }
+
  [data-txt-color="gray"] {
-   color: #ADADAD;
-}
+    color: #ADADAD;
+ }
+
  [data-txt-color='black-opacity'] {
     background-color: var(--txt-color-transparent);
  }
 
 
+ [data-font-size="18"] {
+    font-size: 18px;
+ }
 
  .fs-7 {
     font-size: 1.13em;
  }
 
- .display-7 { 
-   font-size: calc(1.2rem + 2vw);
+ .display-7 {
+    font-size: calc(1.2rem + 2vw);
  }
- .display-8 { 
-   font-size: calc(1.2rem + 2vw);
-}
 
-@media (min-width: 1200px){
-   .display-7 {
-      font-size: 2.2em; 
-   }
-   .display-8 {
-     font-size: 2em; 
-  }
-}
+ .display-8 {
+    font-size: calc(1.2rem + 2vw);
+ }
+
+ @media (min-width: 1200px) {
+    .display-7 {
+       font-size: 2.2em;
+    }
+
+    .display-8 {
+       font-size: 2em;
+    }
+ }
+
  .b-before-after {
     position: relative;
     width: 100%;
@@ -161,13 +169,14 @@
     background: rgb(0, 0, 0);
  }
 
- @media(max-width:590px){
-   .b-before-after { 
-      max-width: 380px;
-  }
+ @media(max-width:590px) {
+    .b-before-after {
+       max-width: 380px;
+    }
  }
- @media(max-width:425px){
-   .b-before-after { 
-      max-width: 320px;
-  }
+
+ @media(max-width:425px) {
+    .b-before-after {
+       max-width: 320px;
+    }
  }

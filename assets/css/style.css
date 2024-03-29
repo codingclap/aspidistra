@@ -246,9 +246,28 @@ section {
     max-width: 45px;
 }
 
+/*
+############################
+##  Contact Us      ##    
+############################
+*/
 
 
+/*
+############################
+##  Footer                ##    
+############################
+*/
+.footer .footer-img {
+    max-width: 260px;
+}
 
+
+/*
+############################
+##   Footer               ##    
+############################
+*/
 
 
 
@@ -260,6 +279,10 @@ section {
 
 
 @media(max-width:768px) {
+    .footer .footer-img {
+        max-width: 230px;
+    }
+
     .ourValues img {
         max-width: 90px;
     }
@@ -276,7 +299,8 @@ section {
         justify-content: center;
         column-gap: 30px;
     }
-    .ourServices .service-icon{
+
+    .ourServices .service-icon {
         text-align: center;
     }
 }
