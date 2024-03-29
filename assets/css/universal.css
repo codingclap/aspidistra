@@ -35,6 +35,11 @@
     src: url('../fonts/OpenSans-Regular.ttf');
  }
 
+ @font-face {
+   font-family: 'opensans-bold';
+   src: url('../fonts/OpenSans-Bold.ttf');
+}
+
  [data-font='proxima-thin'] {
     font-family: 'proxima-nova-thin';
  }
@@ -58,6 +63,10 @@
  [data-font='opensans-regular'] {
     font-family: 'opensans-regular';
  }
+
+ [data-font='opensans-bold'] {
+   font-family: 'opensans-bold';
+}
 
  [data-txt-color='green'] {
     color: var(--txt-color1);
