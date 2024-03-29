@@ -171,33 +171,40 @@ section {
 ##   Our Services       ##    
 ############################
 */
-.ourServices .read-more {
-    position: relative;
+.ourServices .card{
+  background-color:#43434300;
+}
+ 
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #fff;
+    background-color: #BD8928;
+    border-color:#BD8928;
+    border-radius: 0px;
+    border:0px;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border:0px;
+}
+.nav-tabs .nav-link{
+    border:0px;
+    background-color: #302207;
+    border-radius:0px;
+    color: #fff;
 }
 
-.ourServices .read-more::after {
-    content: ' ';
-    position: absolute;
-    width: 46%;
-    height: 17px;
-    top: 2px;
-    left: 99px;
-    background-size: contain;
-    background-image: url(../img/right-arrow.png);
-    background-repeat: no-repeat;
+.ourServices .service-offering{
+ display:flex;
+ justify-content:flex-start;
+ align-items: flex-start;
+ flex-wrap: wrap;
+ column-gap: 50px;
 }
-
-.serviceDetails {
-    background-color: #423C3E;
-    border-radius: 20px;
+ 
+.ourServices .service-icon {
+    width: 100%;
+    max-width: 105px;
+  
 }
-
-.details-box {
-    background-color: #423C3E;
-    height: 100px;
-    border-radius: 20px;
-}
-
 /*
 ############################
 ##   Our Services       ##    
