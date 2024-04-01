@@ -51,6 +51,9 @@ mainSwitch.addEventListener('click', function (e) {
     navbarPanel.setAttribute('data-bg-color', 'black');
     footerImg.src = "assets/img/aspidistra-big-dark.png";
     document.getElementById('nav-tabContent').style.border = "2px solid #545454";
+    document.getElementById('bubble-girl').src="assets/img/bubble-gum-girl-light-mode.png";
+    document.getElementById('custom-btn').style.color="#BD8928";
+   
     //ourStoryBanner.style.backgroundImage = "url()";
     //ourValuesBanner.style.backgroundImage = "url()";
 
@@ -98,6 +101,8 @@ mainSwitch.addEventListener('click', function (e) {
     homeBanner.style.backgroundImage = "url(assets/img/bg-1.jpg)";
     footerImg.src = "assets/img/aspidistra-big.png";
     document.getElementById('nav-tabContent').style.border = "2px solid #fff";
+    document.getElementById('bubble-girl').src="assets/img/bubble-gum-girl.png";
+    document.getElementById('custom-btn').style.color="#fff";
     // ourStoryBanner.style.backgroundImage = "url(assets/img/our-story-bg.png)";
     // ourValuesBanner.style.backgroundImage = "url(assets/img/our-story-bg.png)";
 

@@ -39,6 +39,14 @@ span.navbar-toggler-icon-1:nth-of-type(3) {
     text-align: center;
 }
 
+#custom-btn{
+ width:160px;
+ height: 50px;
+ border-radius:40px;
+ border:2px solid #BD8928;
+ padding: 13px 35px;
+ text-decoration: none;
+}
 /*
 ############################
 ##   Toggle Button       ##    
