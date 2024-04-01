@@ -72,9 +72,10 @@ span.navbar-toggler-icon-1:nth-of-type(3) {
     border-radius: 50%;
     background-color: #938F8F;
     top: 5px;
-    left: 8px;
+    left: 9px;
     transition: all 0.5s;
 }
+
 
 .switch-controll p {
     margin: 0px;
@@ -88,8 +89,9 @@ span.navbar-toggler-icon-1:nth-of-type(3) {
 }
 
 .switch-controll .checkbox:checked+.toggle::after {
-    left: 59px;
+    left: 60px;
     cursor: pointer;
+    background-color: #CFCFCF;
 }
 
 .switch-controll .checkbox:checked+.toggle {

@@ -32,10 +32,34 @@ function darkMode() {
   }
 }
 
+function iconColorOnLightMode(){
+  let iconPrimary = document.querySelectorAll('.iconPrimary');
+  let iconSecondary = document.querySelectorAll('.iconSecondary');
+  for(let light=0; light < iconPrimary.length; light++){
+    console.log(iconPrimary[light].style.fill="#0D6569");
+  }
+  for(let darks=0; darks < iconSecondary.length; darks++){
+    console.log(iconSecondary[darks].style.fill="#97D9DC");
+  }
+}
+
+function iconColorOnDarkMode(){
+  let iconPrimary = document.querySelectorAll('.iconPrimary');
+  let iconSecondary = document.querySelectorAll('.iconSecondary');
+  for(let light=0; light < iconPrimary.length; light++){
+    console.log(iconPrimary[light].style.fill="#BD8928");
+  }
+  for(let darks=0; darks < iconSecondary.length; darks++){
+    console.log(iconSecondary[darks].style.fill="#F3CA7C");
+  }
+}
+
 mainSwitch.addEventListener('click', function (e) {
   if (mainSwitch.value === 'light') {
     mainSwitch.value = 'dark';
     /** Light Mode */
+
+    iconColorOnLightMode();
 
     for (let i = 0; i < headingColor.length; i++) {
       headingColor[i].setAttribute('data-txt-color', 'dark');
@@ -85,6 +109,8 @@ mainSwitch.addEventListener('click', function (e) {
 
   } else if (mainSwitch.value === 'dark') {
     mainSwitch.value = 'light';
+
+    iconColorOnDarkMode();
     /** Dark Mode */
     for (let i = 0; i < headingColor.length; i++) {
       headingColor[i].setAttribute('data-txt-color', 'green');
