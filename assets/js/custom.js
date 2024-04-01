@@ -10,24 +10,27 @@ let navbarPanel = document.querySelector('.navbar');
 let ourStory = document.querySelector('.ourStory');
 let footerImg = document.querySelector('.footer-img');
 let tabsLink = document.querySelectorAll('button.nav-link');
-let finalTabs=[];
+
+let finalTabs = [];
 for (let ss = 0; ss < tabsLink.length; ss++) {
+
   tabsLink[ss].addEventListener('click', function (e) {
-    let arr = ['Strategy', 'Impact', 'Content', 'Learning & Development'];
-    if (tabsLink[ss].classList.contains('light-mode')) {
-      if (tabsLink[ss].attributes['aria-selected'].nodeValue == true) {
-       finalTabs = arr.filter((arrs) => arrs !== tabsLink[ss].innerHTML);
-        //console.log(finalTabs);
-      }
-    }
-  
+    darkMode();
+     
   });
 
-  
-  
 }
 
-
+function darkMode() {
+  for (let pop = 0; pop < tabsLink.length; pop++) {
+    if (tabsLink[pop].attributes['aria-selected'].nodeValue === "false" && tabsLink[pop].classList.contains('light-mode')) {
+      tabsLink[pop].classList.add("unselected");
+    }else{
+      tabsLink[pop].classList.remove("unselected");
+    }
+     
+  }
+}
 
 mainSwitch.addEventListener('click', function (e) {
   if (mainSwitch.value === 'light') {
@@ -61,10 +64,15 @@ mainSwitch.addEventListener('click', function (e) {
     for (let m = 0; m < tabsLink.length; m++) {
       if (tabsLink[m].attributes['aria-selected'].nodeValue == "true") {
         tabsLink[m].classList.add("light-mode");
-      } else {
-        tabsLink[m].style.backgroundColor = "#fff";
-        tabsLink[m].style.color = "#000";
+        tabsLink[m].classList.remove("dark-mode");
         tabsLink[m].classList.add("light-mode");
+        tabsLink[m].classList.remove("dark-mode");
+
+      } else {
+        tabsLink[m].style.backgroundColor = "unset";
+        tabsLink[m].style.color = "unset";
+        tabsLink[m].classList.add("light-mode");
+        tabsLink[m].classList.remove("dark-mode");
       }
       // console.log(tabsLink[m].attributes['aria-selected'].nodeValue);
     }
@@ -102,11 +110,23 @@ mainSwitch.addEventListener('click', function (e) {
 
     for (let m = 0; m < tabsLink.length; m++) {
       if (tabsLink[m].attributes['aria-selected'].nodeValue == "true") {
-        tabsLink[m].classList.add("dark-mode");
+        if (tabsLink[m].classList.contains('light-mode')) {
+          tabsLink[m].classList.add("dark-mode");
+          tabsLink[m].classList.remove("light-mode");
+          tabsLink[m].style.backgroundColor = "";
+          tabsLink[m].style.color = "";
+        } else {
+          tabsLink[m].classList.add("dark-mode"); 
+          tabsLink[m].classList.remove("light-mode");
+          tabsLink[m].style.backgroundColor = "";
+          tabsLink[m].style.color = "";
+        }
       } else {
         tabsLink[m].style.backgroundColor = "";
         tabsLink[m].style.color = "";
         tabsLink[m].classList.add("dark-mode");
+        tabsLink[m].classList.remove("light-mode");
+        tabsLink[m].classList.remove("unselected");
       }
       // console.log(tabsLink[m].attributes['aria-selected'].nodeValue);
     }
@@ -154,32 +174,32 @@ navButton.addEventListener('click', () => {
 
 /**************** Services Hide and Show **************/
 
-let serviceReadBtn = document.querySelectorAll('a.read-more');
-let items_id = [];
-for (let i = 0; i < serviceReadBtn.length; i++) {
+// let serviceReadBtn = document.querySelectorAll('a.read-more');
+// let items_id = [];
+// for (let i = 0; i < serviceReadBtn.length; i++) {
 
-  let box_className = serviceReadBtn[i].classList[2];
-  items_id.push(box_className);                                            // Push all the elements to the array
+//   let box_className = serviceReadBtn[i].classList[2];
+//   items_id.push(box_className);                                            // Push all the elements to the array
 
-  serviceReadBtn[i].addEventListener('click', () => {
-    let details_page;
+//   serviceReadBtn[i].addEventListener('click', () => {
+//     let details_page;
 
-    if (serviceReadBtn[i].classList.contains(box_className)) {
+//     if (serviceReadBtn[i].classList.contains(box_className)) {
 
-      document.querySelector('.details-' + box_className).classList.remove('d-none');     // Removed unused Section
+//       document.querySelector('.details-' + box_className).classList.remove('d-none');     // Removed unused Section
 
-      const filteredNames = items_id.filter((items_ids) => items_ids !== box_className);   // Matched the Selected Content box class name from the Array
+//       const filteredNames = items_id.filter((items_ids) => items_ids !== box_className);   // Matched the Selected Content box class name from the Array
 
-      for (let j = 0; j < filteredNames.length; j++) {
-        console.log(filteredNames[j]);
-        document.querySelector('.details-' + filteredNames[j]).classList.add('d-none');        // Add class on those Content box are unused
-      }
+//       for (let j = 0; j < filteredNames.length; j++) {
+//         console.log(filteredNames[j]);
+//         document.querySelector('.details-' + filteredNames[j]).classList.add('d-none');        // Add class on those Content box are unused
+//       }
 
-    }
-  })
+//     }
+//   })
 
-}
-console.log(items_id);         // Display All Content Boxs Class Name
+// }
+//console.log(items_id);         // Display All Content Boxs Class Name
 
 
 /**************** Services Hide and Show **************/

@@ -207,7 +207,21 @@ section {
 .ourServices .service-icon {
     width: 100%;
     max-width: 105px;
+}
 
+.ourServices .light-mode {
+    color: #545454;
+    background-color: #fff;
+}
+
+.ourServices .light-mode.active {
+    background-color: rgb(189, 137, 40)!important;
+    color: rgb(255, 255, 255)!important;
+}
+
+.ourServices .unselected {
+    color: #545454;
+    background-color: #fff;
 }
 
 /*
