@@ -72,7 +72,7 @@ mainSwitch.addEventListener('click', function (e) {
     }
     ourStory.setAttribute('data-bg-color', 'gray-light');
     homeBanner.style.backgroundImage = "url()";
-    navbarPanel.setAttribute('data-bg-color', 'black');
+    //navbarPanel.setAttribute('data-bg-color', 'black');
     footerImg.src = "assets/img/aspidistra-big-dark.png";
     document.getElementById('nav-tabContent').style.border = "2px solid #545454";
     document.getElementById('bubble-girl').src="assets/img/bubble-gum-girl-light-mode.png";
@@ -123,7 +123,7 @@ mainSwitch.addEventListener('click', function (e) {
     }
 
     ourStory.setAttribute('data-bg-color', 'none');
-    navbarPanel.setAttribute('data-bg-color', 'black-opacity');
+   // navbarPanel.setAttribute('data-bg-color', 'black-opacity');
     homeBanner.style.backgroundImage = "url(assets/img/bg-1.jpg)";
     footerImg.src = "assets/img/aspidistra-big.png";
     document.getElementById('nav-tabContent').style.border = "2px solid #fff";
