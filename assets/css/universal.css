@@ -110,6 +110,10 @@
     font-size: 18px;
  }
 
+ [data-max-width="61px"] {
+  max-width:61px;
+}
+
  .fs-7 {
     font-size: 1.13em;
  }
