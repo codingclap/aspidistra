@@ -57,7 +57,7 @@ span.navbar-toggler-icon-1:nth-of-type(3) {
     position: relative;
     display: inline-block;
     width: 100px;
-    height: 46px;
+    height: 48px;
     background-color: #575757;
     border-radius: 30px;
     border: 0px solid gray;
@@ -72,7 +72,7 @@ span.navbar-toggler-icon-1:nth-of-type(3) {
     height: 36px;
     border-radius: 50%;
     background-color: #938F8F;
-    top: 5px;
+    top: 6px;
     left: 9px;
     transition: all 0.5s;
 }
@@ -217,7 +217,7 @@ section {
 
 .ourServices .service-icon {
     width: 100%;
-    max-width: 105px;
+    max-width: 120px;
 }
 
 .ourServices .light-mode {
@@ -327,5 +327,14 @@ section {
 
     .ourServices .service-icon {
         text-align: center;
+    }
+}
+
+@media(max-width:430px) {
+    .ourServices .service-icon {
+        max-width: 126px;
+    }
+    .ourServices .service-offering { 
+        column-gap: 20px;
     }
 }
