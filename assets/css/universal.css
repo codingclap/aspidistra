@@ -117,6 +117,9 @@
  .fs-7 {
     font-size: 1.13em;
  }
+ .fs-8{
+   font-size: 1em;
+}
 
  .display-7 {
     font-size: calc(1.2rem + 2vw);
